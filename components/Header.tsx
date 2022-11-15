@@ -1,11 +1,30 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {AiOutlineSearch} from "react-icons/ai";
 import {IoIosNotificationsOutline} from "react-icons/io";
 
 function Header() {
+  const [isScrolled, setIsScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if(window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, []);
+
   return (
-    <header>
+    <header className={`${isScrolled && "bg-red-500"}`}>
       <div className="flex items-center space-x-2 md:space-x-10">
         <Image
           src="/logo.svg"
