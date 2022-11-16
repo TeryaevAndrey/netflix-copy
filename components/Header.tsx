@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {AiOutlineSearch} from "react-icons/ai";
 import {IoIosNotificationsOutline} from "react-icons/io";
+import axios from "axios";
 
 function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -35,11 +36,21 @@ function Header() {
         />
 
         <ul className="hidden space-x-4 md:flex">
-          <li className="headerLink">Home</li>
-          <li className="headerLink">TV Shows</li>
-          <li className="headerLink">Movies</li>
+          <Link href="/">
+            <li className="headerLink">Home</li>
+          </Link>
+          <Link href="/shows">
+            <li className="headerLink">TV Shows</li>
+          </Link>
+          <Link href="/movies">
+            <li className="headerLink">Movies</li>
+          </Link>
+          <Link href="/popular">
           <li className="headerLink">New & Popular</li>
-          <li className="headerLink">My List</li>
+          </Link>
+          <Link href="mylist">
+            <li className="headerLink">My List</li>
+          </Link>
         </ul>
       </div>
 
