@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {AiOutlineSearch} from "react-icons/ai";
 import {IoIosNotificationsOutline} from "react-icons/io";
-import axios from "axios";
 
 function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
