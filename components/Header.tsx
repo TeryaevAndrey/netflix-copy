@@ -24,7 +24,7 @@ function Header() {
   }, []);
 
   return (
-    <header className={`${isScrolled && "bg-red-500"}`}>
+    <header className={`${isScrolled && "bg-[#010511]"}`}>
       <div className="flex items-center space-x-2 md:space-x-10">
         <Image
           src="/logo.svg"
@@ -55,7 +55,7 @@ function Header() {
 
       <div className="flex items-center space-x-4 font-light">
         <AiOutlineSearch className="hidden w-6 h-6 sm:inline cursor-pointer" />
-        <p className="hidden lg:inline">Kids</p>
+        <p className="hidden lg:inline">lorem</p>
         <IoIosNotificationsOutline className="w-6 h-6 cursor-pointer" />
         <Link href="/account">
           <Image src="/accountImg.svg" alt="account" width={60} height={60} className="cursor-pointer rounded w-6 h-6" />
