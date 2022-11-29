@@ -17,6 +17,14 @@
     @apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3];
   }
 
+  .bannerTitle {
+    @apply text-6xl font-semibold
+  }
+  
+  .bannerText {
+    @apply text-2xl mt-3
+  }
+
   .bannerBtn {
     @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
