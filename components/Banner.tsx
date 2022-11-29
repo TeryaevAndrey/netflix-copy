@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import { Movie } from "../types";
+import { IFilmsList } from "../interfaces";
 import BgImg from "../public/bg.jpg";
 
 interface IBanner {
-  top: Movie[];
+  top: IFilmsList;
 }
 
 function Banner({ top }: IBanner) {
