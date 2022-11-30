@@ -8,7 +8,7 @@ interface IFilmItem {
 
 const FilmItem = ({url, title}: IFilmItem) => {
   return (
-    <div className="flex justify-center items-center relative w-[200px] h-[300px]">
+    <div className="flex justify-center items-center relative w-[200px] h-[300px] min-w-[200px]">
       <Image className="absolute l-0 t-0 object-cover" src={url} alt={title} layout="fill" />
     </div>
   );
